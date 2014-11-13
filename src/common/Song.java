@@ -6,13 +6,13 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 public class Song implements Comparable {
     private String artist;
     private String album;
-    private String name;
+    private String title;
     private String songID;
 
-    public Song(String artist, String album, String name, String songID) {
+    public Song(String artist, String album, String title, String songID) {
         this.artist = artist;
         this.album = album;
-        this.name = name;
+        this.title = title;
         this.songID = songID;
     }
 
@@ -40,7 +40,7 @@ public class Song implements Comparable {
 
     @Override
     public String toString() {
-        return "Song {" + "Artist = " + artist + ", Album = " + album + ", Name = " + name + ", Song ID = " + songID + '}';
+        return "Song {" + "Artist = " + artist + ", Album = " + album + ", Title = " + title + ", Song ID = " + songID + '}';
     }
     
     @Override
@@ -68,12 +68,12 @@ public class Song implements Comparable {
         this.album = album;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getSongID() {
